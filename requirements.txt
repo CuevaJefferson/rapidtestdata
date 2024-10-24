@@ -1,0 +1,9 @@
+langchain
+python-dotenv
+ipykernel
+langchain-community
+streamlit
+bs4
+openai
+langchain-groq
+mammoth
