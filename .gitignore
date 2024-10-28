@@ -2,3 +2,8 @@
 .env
 /Documents
 enhancement_checklist.md
+test_prompts.ipynb
+__pycache__/
+Documentations/
+chroma_db/
+chroma_dbs/
