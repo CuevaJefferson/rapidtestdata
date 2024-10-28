@@ -7,3 +7,6 @@ bs4
 openai
 langchain-groq
 mammoth
+langchain_chroma
+langchain_ollama
+pymongo==3.11
