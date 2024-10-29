@@ -79,16 +79,16 @@ mock_data_json = ""
 chain=prompt|llm
 
 if st.session_state.add_scenario:
-    # print(f"BB NAME:{building_block_name}")    
-    # print(f"BB NAME TYPE:{type(building_block_name)}")
-    # if mock_data is not None:
-    #     for mock_data_item in mock_data:
-    #         add_mock_data_json += mock_data_item.getvalue().decode( "utf-8" )
-    # if input is not None:
-    #     add_input_json = input.getvalue().decode( "utf-8" )
-    # if output is not None:
-    #     add_output_json = output.getvalue().decode( "utf-8" )
-    # add_scenario(building_block_name.lower(),add_input_json,add_mock_data_json,add_output_json)
+    print(f"BB NAME:{building_block_name}")    
+    print(f"BB NAME TYPE:{type(building_block_name)}")
+    if mock_data is not None:
+        for mock_data_item in mock_data:
+            add_mock_data_json += mock_data_item.getvalue().decode( "utf-8" )
+    if input is not None:
+        add_input_json = input.getvalue().decode( "utf-8" )
+    if output is not None:
+        add_output_json = output.getvalue().decode( "utf-8" )
+    add_scenario(building_block_name.lower(),add_input_json,add_mock_data_json,add_output_json)
     st.session_state.add_scenario = False
     st.write(f"Scenario Added for {building_block_name.lower()}")
     update_key()
