@@ -28,7 +28,7 @@ def get_model():
 
 
 llm = get_model()
-prompt = PromptTemplate.from_file(template_file="./prompt_template_2.text")
+prompt = PromptTemplate.from_file(template_file="./prompt_template.text")
 
 
 def process_document():
